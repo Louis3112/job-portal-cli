@@ -1,15 +1,17 @@
+import java.util.ArrayList;
+
 public class Job {
     private String jobId;
     private String jobName;
     private String jobDescription;
-    private JobCategory jobCategory;
+    private ArrayList<JobCategory> jobCategories;
     private String recruiterId;
 
-    public Job(String jobId, String jobName, String jobDescription, JobCategory jobCategory, String recruiterId) {
+    public Job(String jobId, String jobName, String jobDescription, ArrayList<JobCategory> jobCategories, String recruiterId) {
         this.jobId = jobId;
         this.jobName = jobName;
         this.jobDescription = jobDescription;
-        this.jobCategory = jobCategory;
+        this.jobCategories = jobCategories;
         this.recruiterId = recruiterId;
     }
 
@@ -19,8 +21,8 @@ public class Job {
     public void setJobName(String jobName) {this.jobName = jobName;}
     public String getJobDescription() {return jobDescription;}
     public void setJobDescription(String jobDescription) {this.jobDescription = jobDescription;}
-    public JobCategory getCategory() {return jobCategory;}
-    public void setCategory(JobCategory jobCategory) {this.jobCategory = jobCategory;}
+    public ArrayList<JobCategory> getCategory() {return jobCategories;}
+    public void setCategory(ArrayList<JobCategory> jobCategories) {this.jobCategories = jobCategories;}
     public String getRecruiter() {return recruiterId;}
     public void setRecruiter(String recruiterId) {this.recruiterId = recruiterId;}
 }
