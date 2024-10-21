@@ -2,14 +2,14 @@ public class Job {
     private String jobId;
     private String jobName;
     private String jobDescription;
-    private EnumCategory category;
+    private JobCategory jobCategory;
     private AbsRecruiter recruiter;
 
-    public Job(String jobId, String jobName, String jobDescription, EnumCategory category, AbsRecruiter recruiter) {
+    public Job(String jobId, String jobName, String jobDescription, JobCategory jobCategory, AbsRecruiter recruiter) {
         this.jobId = jobId;
         this.jobName = jobName;
         this.jobDescription = jobDescription;
-        this.category = category;
+        this.jobCategory = jobCategory;
         this.recruiter = recruiter;
     }
 
@@ -19,8 +19,8 @@ public class Job {
     public void setJobName(String jobName) {this.jobName = jobName;}
     public String getJobDescription() {return jobDescription;}
     public void setJobDescription(String jobDescription) {this.jobDescription = jobDescription;}
-    public EnumCategory getCategory() {return category;}
-    public void setCategory(EnumCategory category) {this.category = category;}
+    public JobCategory getCategory() {return jobCategory;}
+    public void setCategory(JobCategory jobCategory) {this.jobCategory = jobCategory;}
     public AbsRecruiter getRecruiter() {return recruiter;}
     public void setRecruiter(AbsRecruiter recruiter) {this.recruiter = recruiter;}
 }
