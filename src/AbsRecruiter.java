@@ -52,12 +52,12 @@ class RecruiterData{
 class RecruiterPreference{
     private String domicile; // Kota
     private int salary;
-    private EnumCategory category;
+    private JobCategory jobCategory;
 
-    public RecruiterPreference(String domicile, int salary, EnumCategory category){
+    public RecruiterPreference(String domicile, int salary, JobCategory jobCategory){
         this.domicile = domicile;
         this.salary = salary;
-        this.category = category;
+        this.jobCategory = jobCategory;
     }
 
     public String getDomicile(){
@@ -73,12 +73,9 @@ class RecruiterPreference{
     public void setSalary(int salary){
         this.salary = salary;
     }
-
-    public EnumCategory getCategory(){
-        return category;
-    }
-    public void setCategory(EnumCategory category){
-        this.category = category;
+    public JobCategory getJobCategories(){return jobCategory;}
+    public void setCategory(JobCategory jobCategory){
+        this.jobCategory = jobCategory;
     }
 }
 

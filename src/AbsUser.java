@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class UserData{
     private String name;
     private String email;
@@ -43,13 +45,13 @@ class UserData{
 class UserPreference{
     private String domicile; // kota
     private int salary;
-    private EnumCategory category;
+    private ArrayList<JobCategory> jobCategories;
     private String position;
 
-    public UserPreference(String domicile, int salary, EnumCategory category){
+    public UserPreference(String domicile, int salary, ArrayList<JobCategory> jobCategories){
         this.domicile = domicile;
         this.salary = salary;
-        this.category = category;
+        this.jobCategories = jobCategories;
     }
 
     public String getDomicile(){
@@ -66,11 +68,11 @@ class UserPreference{
         this.salary = salary;
     }
 
-    public EnumCategory getCategory(){
-        return category;
+    public ArrayList<JobCategory> getJobCategories(){
+        return jobCategories;
     }
-    public void setCategory(EnumCategory category){
-        this.category = category;
+    public void setCategory(ArrayList<JobCategory> jobCategories){
+        this.jobCategories = jobCategories;
     }
 
     public String getPosition(){
