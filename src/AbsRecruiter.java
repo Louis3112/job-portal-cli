@@ -80,8 +80,8 @@ class RecruiterPreference{
 }
 
 abstract class AbsRecruiter{
-    protected RecruiterData basicData;
-    protected RecruiterPreference preferenceData;
+    private RecruiterData basicData;
+    private RecruiterPreference preferenceData;
 
     public AbsRecruiter(RecruiterData basicData, RecruiterPreference preferenceData){
         this.basicData = basicData;
