@@ -1,3 +1,5 @@
+package source.data.job;
+
 import java.util.ArrayList;
 
 public class Job {
@@ -26,3 +28,4 @@ public class Job {
     public String getRecruiter() {return recruiterId;}
     public void setRecruiter(String recruiterId) {this.recruiterId = recruiterId;}
 }
+
