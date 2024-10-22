@@ -1,3 +1,5 @@
+package source.data.job;
+
 public class JobCategory {
     private String name;
     private String description;

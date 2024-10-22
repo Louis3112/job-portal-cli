@@ -1,4 +1,7 @@
+package source.data.user;
+
 import java.util.ArrayList;
+import source.data.job.*;
 
 class UserData{
     private String name;

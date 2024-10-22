@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package source.data.company;
+import source.data.job.Job;
 
 public class Company {
 
