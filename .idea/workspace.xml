@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302062ef-51ba-46e8-a27e-304977afcf24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbsRecruiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbsRecruiter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbsUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JobCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JobCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/job/JobCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecruiterData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecruiterPreference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserPreference.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
