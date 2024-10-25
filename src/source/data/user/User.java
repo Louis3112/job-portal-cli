@@ -103,7 +103,7 @@ abstract class AbsUser{
     public abstract void displayInfo();
 }
 
-class User extends AbsUser{
+public class User extends AbsUser{
     public User(UserData basicData){
         super(basicData);
     }
