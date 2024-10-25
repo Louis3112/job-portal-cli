@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302062ef-51ba-46e8-a27e-304977afcf24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/source/data/resume/Resume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/source/data/workExperience/WorkExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/source/data/workExperience/WorkExperienceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbsRecruiter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbsRecruiter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbsUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JobCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JobCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/job/JobCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecruiterData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RecruiterPreference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserPreference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/data/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/user/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,22 +49,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev__consolidate",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Developer/Java/new_lab_management_system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/Developer/Java/job-portal-cli/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__consolidate&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Developer/Java/new_lab_management_system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Developer/Java/job-portal-cli/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,6 +84,8 @@
       <workItem from="1729234509082" duration="2000" />
       <workItem from="1729499396368" duration="2809000" />
       <workItem from="1729563193850" duration="3661000" />
+      <workItem from="1729737183433" duration="6423000" />
+      <workItem from="1729836814255" duration="4085000" />
     </task>
     <servers />
   </component>

@@ -95,4 +95,14 @@ public class Company {
         return activeJobs;
     }
 
+    public void updateCompanyProfile(String name, String address, String phone, String industry) {
+        if (name == "" || address == "" || phone == "" || industry == "") {
+            throw new IllegalArgumentException("Invalid company profile");
+        }
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.industry = industry;
+    }
+
 }
