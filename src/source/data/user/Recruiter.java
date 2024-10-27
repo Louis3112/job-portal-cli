@@ -23,6 +23,10 @@ public class Recruiter extends User<Recruiter> {
         this.top = -1;
     }
 
+    public String getCompanyId() {return companyId;}
+    public Job[] getPostedJobs() {return postedJobs;}
+    public int getTop() {return top;}
+
     @Override
     public void updateProfile(Recruiter newProfile) {
         this.companyId = newProfile.companyId;

@@ -19,4 +19,10 @@ public abstract class User<T> {
 
     public abstract void updateProfile(T param);
     public abstract void search();
+
+    public String getUserId() {return userId;}
+    public String getName() {return name;}
+    public String getEmail() {return email;}
+    public String getPhone() {return phone;}
+    public String getAddress() {return address;}
 }

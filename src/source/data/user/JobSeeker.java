@@ -27,6 +27,10 @@ public class JobSeeker extends User<JobSeeker> {
         this.preference = preference;
     }
 
+    public Resume getResume() {return resume;}
+    public ArrayList<Job> getAppliedJobs() {return appliedJobs;}
+    public String getPreference() {return preference;}
+
     @Override
     public void updateProfile(JobSeeker newProfile) {
         this.resume = newProfile.resume;
