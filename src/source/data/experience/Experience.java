@@ -1,26 +1,33 @@
-package source.data.workExperience;
+package source.data.experience;
 
 import java.time.LocalDate;
 
-public interface WorkExperienceInterface {
-    LocalDate getStartDate();
-    LocalDate getEndDate();
-    void setStartDate(LocalDate startDate);
-    void setEndDate(LocalDate endDate);
+public abstract class Experience {
+    protected LocalDate startDate;
+    protected LocalDate endDate;
+    protected String institution;
+    protected String description;
 
-    default boolean isCurrentJob() {
-        return getEndDate() == null;
-    }
+    public abstract void setStartDate(LocalDate startDate);
+    public abstract void setEndDate(LocalDate endDate);
 
-    default String getDuration() {
+    public LocalDate getStartDate() {return startDate;}
+
+    public LocalDate getEndDate() {return endDate;}
+
+    public String getDuration() {
         if (getStartDate() == null) {
-            return "Invalid dates";
+            return "invalid dates";
         }
         LocalDate end = getEndDate() != null ? getEndDate() : LocalDate.now();
         return calculateDuration(getStartDate(), end);
     }
 
-    private static String calculateDuration(LocalDate startDate, LocalDate endDate) {
+    public boolean isCurrently() {
+        return getEndDate() == null;
+    }
+
+    public String calculateDuration(LocalDate startDate, LocalDate endDate) {
         int years = endDate.getYear() - startDate.getYear();
         int months = endDate.getMonthValue() - startDate.getMonthValue();
 

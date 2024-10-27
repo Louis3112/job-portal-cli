@@ -1,6 +1,6 @@
 package source.data.resume;
 
-import source.data.workExperience.WorkExperience;
+import source.data.experience.WorkExperience;
 
 import java.util.ArrayList;
 
