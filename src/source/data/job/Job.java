@@ -1,6 +1,7 @@
 package source.data.job;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Job {
     private String jobId;
@@ -9,8 +10,8 @@ public class Job {
     private ArrayList<JobCategory> jobCategories;
     private String recruiterId;
 
-    public Job(String jobId, String jobName, String jobDescription, ArrayList<JobCategory> jobCategories, String recruiterId) {
-        this.jobId = jobId;
+    public Job(String jobName, String jobDescription, ArrayList<JobCategory> jobCategories, String recruiterId) {
+        this.jobId = UUID.randomUUID().toString();
         this.jobName = jobName;
         this.jobDescription = jobDescription;
         this.jobCategories = jobCategories;

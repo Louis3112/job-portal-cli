@@ -1,6 +1,8 @@
 package source.data.company;
 import source.data.job.Job;
 
+import java.util.UUID;
+
 public class Company {
 
     private String companyId;
@@ -9,13 +11,13 @@ public class Company {
     private String phone;
     private String industry;
 
-    public Company(String companyId, String name) {
-        this.companyId = companyId;
+    public Company(String name) {
+        this.companyId = UUID.randomUUID().toString();
         this.name = name;
     }
 
-    public Company(String companyId, String name, String address, String phone, String industry) {
-        this(companyId, name);
+    public Company(String name, String address, String phone, String industry) {
+        this(name);
         this.address = address;
         this.phone = phone;
         this.industry = industry;
