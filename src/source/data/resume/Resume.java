@@ -3,6 +3,7 @@ package source.data.resume;
 import source.data.experience.WorkExperience;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Resume {
     private String resumeId;
@@ -10,16 +11,14 @@ public class Resume {
     private String lastEducation;
     private ArrayList<WorkExperience> workingExperiences;
 
-    public Resume(String resumeId, String userId, String lastEducation) {
-        this.resumeId = resumeId;
+    public Resume(String userId, String lastEducation) {
+        this.resumeId = UUID.randomUUID().toString();
         this.userId = userId;
         this.lastEducation = lastEducation;
     }
 
     public Resume(String resumeId, String userId, String lastEducation, ArrayList<WorkExperience> workingExperiences) {
-        this.resumeId = resumeId;
-        this.userId = userId;
-        this.lastEducation = lastEducation;
+        this(userId, lastEducation);
         this.workingExperiences = workingExperiences;
     }
 

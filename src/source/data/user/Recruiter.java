@@ -9,7 +9,12 @@ public class Recruiter extends User<Recruiter> {
     private Job[] postedJobs;
     private int top;
 
-    public Recruiter(String companyId, Job[] postedJobs) {
+    public Recruiter(String name, String email, String phone, String address) {
+        super(name, email, phone, address);
+    }
+
+    public Recruiter(String name, String email, String phone, String address, String companyId, Job[] postedJobs) {
+        this(name, email, phone, address);
         if (postedJobs.length > MAX_POSTED_JOBS) {
             throw new IllegalArgumentException("Maximum number of posted jobs is " + MAX_POSTED_JOBS);
         }

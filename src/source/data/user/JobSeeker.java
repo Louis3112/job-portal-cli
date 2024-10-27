@@ -12,6 +12,21 @@ public class JobSeeker extends User<JobSeeker> {
     private ArrayList<Job> appliedJobs;
     private String preference;
 
+    public JobSeeker(String name, String email, String phone, String address) {
+        super(name, email, phone, address);
+    }
+
+    public JobSeeker(String name, String email, String phone, String address, Resume resume, ArrayList<Job> appliedJobs) {
+        this(name, email, phone, address);
+        this.resume = resume;
+        this.appliedJobs = appliedJobs;
+    }
+
+    public JobSeeker(String name, String email, String phone, String address, Resume resume, ArrayList<Job> appliedJobs, String preference) {
+        this(name, email, phone, address, resume, appliedJobs);
+        this.preference = preference;
+    }
+
     @Override
     public void updateProfile(JobSeeker newProfile) {
         this.resume = newProfile.resume;
