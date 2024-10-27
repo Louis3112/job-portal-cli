@@ -1,6 +1,12 @@
 package source.data.user;
 
+import source.data.application.Application;
+import source.data.application.ApplicationStatus;
 import source.data.job.Job;
+import source.data.resume.Resume;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Recruiter extends User<Recruiter> {
     private static final int MAX_POSTED_JOBS = 10;
@@ -8,24 +14,29 @@ public class Recruiter extends User<Recruiter> {
     private String companyId;
     private Job[] postedJobs;
     private int top;
+    private List<Application> jobApplications;
 
-    public Recruiter(String name, String email, String phone, String address) {
+    public Recruiter(String name, String email, String phone, String address, String companyId) {
         super(name, email, phone, address);
-    }
-
-    public Recruiter(String name, String email, String phone, String address, String companyId, Job[] postedJobs) {
-        this(name, email, phone, address);
-        if (postedJobs.length > MAX_POSTED_JOBS) {
-            throw new IllegalArgumentException("Maximum number of posted jobs is " + MAX_POSTED_JOBS);
-        }
         this.companyId = companyId;
-        this.postedJobs = postedJobs;
         this.top = -1;
+        this.jobApplications = new ArrayList<Application>();
     }
 
     public String getCompanyId() {return companyId;}
     public Job[] getPostedJobs() {return postedJobs;}
     public int getTop() {return top;}
+    public List<Application> getJobApplications(String jobId) {
+        List<Application> filteredJobApplications = new ArrayList<Application>();
+
+        for (Application application : jobApplications) {
+            if (application.getJobId().equals(jobId)) {
+                filteredJobApplications.add(application);
+            }
+        }
+
+        return filteredJobApplications;
+    }
 
     @Override
     public void updateProfile(Recruiter newProfile) {
@@ -71,6 +82,53 @@ public class Recruiter extends User<Recruiter> {
             activeJobs[i] = postedJobs[i];
         }
         return activeJobs;
+    }
+
+    public void reviewJobApplications(String jobId) {
+        List<Application> jobApplications = getJobApplications(jobId);
+
+        for (Application application : jobApplications) {
+            switch (application.getStatus()) {
+                case APPLIED :
+                    reviewResume(application);
+                    break;
+                case RESUME_REVIEWED:
+                    System.out.println("Resume reviewed to " + application.getJobId());
+                    break;
+                case INTERVIEW_COMPLETED:
+                    System.out.println("Scheduled interview to " + application.getJobId());
+                    break;
+                case TECHNICAL_TEST_COMPLETED:
+                    System.out.println("Technical test completed to " + application.getJobId());
+                    break;
+                case OFFERED:
+                    System.out.println("Offered to " + application.getJobId());
+                    break;
+            }
+        }
+    }
+
+    public void reviewResume(Application application) {
+        JobSeeker applicant = application.getApplicant();
+        Resume resume = applicant.getResume();
+
+        boolean isFullfilledBasicRequirements = checkBasicRequirements(resume);
+
+        if (isFullfilledBasicRequirements) {
+            application.updateStatus(
+                    ApplicationStatus.SCHEDULED_INTERVIEW,
+                    "Congratulations!, You are scheduled interview to " + application.getJobId()
+            );
+        } else {
+            application.updateStatus(
+                    ApplicationStatus.REJECTED,
+                    "Unfortunately, you are rejected " + application.getJobId()
+            );
+        }
+    }
+
+    private boolean checkBasicRequirements(Resume resume) {
+        return true;
     }
 
 }
