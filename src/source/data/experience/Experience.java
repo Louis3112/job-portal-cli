@@ -10,10 +10,13 @@ public abstract class Experience {
 
     public abstract void setStartDate(LocalDate startDate);
     public abstract void setEndDate(LocalDate endDate);
+    public abstract void setInstitution(String institution);
+    public abstract void setDescription(String description);    
 
     public LocalDate getStartDate() {return startDate;}
-
     public LocalDate getEndDate() {return endDate;}
+    public String getInstitution() {return institution;}
+    public String getDescription() {return description;}
 
     public String getDuration() {
         if (getStartDate() == null) {

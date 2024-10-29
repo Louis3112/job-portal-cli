@@ -20,6 +20,13 @@ public class Education extends Experience {
         this.endDate = endDate;
     }
 
+    public void setLevel(String level){this.level = level;}
+    
+    public String getEducationExperienceID(){return educationExperienceId;}
+    public String getLevel(){return level;}
+    public String getDescription(){return description;}
+    public String getInstitution(){return institution;}
+    
     @Override
     public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
@@ -29,4 +36,15 @@ public class Education extends Experience {
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
+
+    @Override
+    public void setDescription(String description) {
+        this.description= description;
+    }
+
+    @Override
+    public void setInstitution(String institution) {
+        this.institution = institution;
+    }
+
 }

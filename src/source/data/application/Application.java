@@ -14,6 +14,9 @@ public class Application {
     private ApplicationStatus status;
     private List<ApplicationNote> notes;
 
+    public Application(){
+
+    }
     public Application(String jobId, JobSeeker applicant, LocalDateTime appliedTime) {
         this.jobId = jobId;
         this.applicant = applicant;

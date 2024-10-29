@@ -20,6 +20,13 @@ public class WorkExperience extends Experience {
         this.endDate = endDate;
     }
 
+    public void setPosition(String position){this.position = position;}
+
+    public String getWorkExperienceID(){return workExperienceId;}
+    public String getPosition(){return position;}
+    public String getDescription(){return description;}
+    public String getInstitution(){return institution;}
+    
     @Override
     public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
@@ -28,6 +35,16 @@ public class WorkExperience extends Experience {
     @Override
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
+    }
+
+    @Override
+    public void setDescription(String description) {
+        this.description= description;
+    }
+
+    @Override
+    public void setInstitution(String institution) {
+        this.institution = institution;
     }
 
 }
