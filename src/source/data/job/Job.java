@@ -10,6 +10,13 @@ public class Job {
     private ArrayList<JobCategory> jobCategories;
     private String recruiterId;
 
+    public Job(String jobName, String jobDescription, String recruiterId) {
+        this.jobId = UUID.randomUUID().toString();
+        this.jobName = jobName;
+        this.jobDescription = jobDescription;
+        this.recruiterId = recruiterId;
+    }
+    
     public Job(String jobName, String jobDescription, ArrayList<JobCategory> jobCategories, String recruiterId) {
         this.jobId = UUID.randomUUID().toString();
         this.jobName = jobName;

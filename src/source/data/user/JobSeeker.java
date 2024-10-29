@@ -1,9 +1,8 @@
 package source.data.user;
 
+import java.util.ArrayList;
 import source.data.job.Job;
 import source.data.resume.Resume;
-
-import java.util.ArrayList;
 
 public class JobSeeker extends User<JobSeeker> {
     public static final int MAX_APPLIED_JOB_CAPACITY = 10;

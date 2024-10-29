@@ -1,9 +1,8 @@
 package source.data.resume;
 
-import source.data.experience.WorkExperience;
-
 import java.util.ArrayList;
 import java.util.UUID;
+import source.data.experience.WorkExperience;
 
 public class Resume {
     private String resumeId;
@@ -11,6 +10,10 @@ public class Resume {
     private String lastEducation;
     private ArrayList<WorkExperience> workingExperiences;
 
+    public Resume(){
+
+    }
+    
     public Resume(String userId, String lastEducation) {
         this.resumeId = UUID.randomUUID().toString();
         this.userId = userId;
