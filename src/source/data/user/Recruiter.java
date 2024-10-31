@@ -19,6 +19,7 @@ public class Recruiter extends User<Recruiter> {
     public Recruiter(String name, String email, String phone, String address, String companyId) {
         super(name, email, phone, address);
         this.companyId = companyId;
+        this.postedJobs = new Job[MAX_POSTED_JOBS];
         this.top = -1;
         this.jobApplications = new ArrayList<Application>();
     }
