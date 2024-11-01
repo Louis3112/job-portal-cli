@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="302062ef-51ba-46e8-a27e-304977afcf24" name="Changes" comment="review applications method init">
-      <change afterPath="$PROJECT_DIR$/src/Main.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/source/utils/auth/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/source/utils/global/Global.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/source/utils/register/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/source/data/company/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/source/data/job/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/job/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/data/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/data/resume/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/resume/Resume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/data/user/JobSeeker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/user/JobSeeker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/source/data/user/Recruiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/user/Recruiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/data/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/data/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/source/utils/global/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/source/utils/global/Global.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -131,6 +130,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/source/data/user/JobSeeker.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

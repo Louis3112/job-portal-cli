@@ -5,6 +5,9 @@ import source.data.job.Job;
 import source.data.job.JobCategory;
 import source.data.user.User;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -90,6 +93,20 @@ public class Global {
                 .orElse(null);
     }
 
+    public static Job findJobByName(String name) {
+        return postedJobs.stream()
+                .filter(job -> job.getJobName().equalsIgnoreCase(name))
+                .findFirst()
+                .orElse(null);
+    }
+
+    public static Job findJobById(String id) {
+        return postedJobs.stream()
+                .filter(job -> job.getJobId().equalsIgnoreCase(id))
+                .findFirst()
+                .orElse(null);
+    }
+
     public static List<Company> getCompaniesByIndustry(String industry) {
         return companies.stream()
                 .filter(company -> company.getIndustry().equalsIgnoreCase(industry))
@@ -101,5 +118,20 @@ public class Global {
                 .filter(company -> company.getCompanyId().equalsIgnoreCase(companyId))
                 .findFirst()
                 .orElse(null);
+    }
+
+    public static LocalDate formatDate(String dateStr) {
+        if (dateStr == null || dateStr.trim().isEmpty()) {
+            throw new IllegalArgumentException("Date string cannot be null or empty");
+        }
+
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy");
+
+            return LocalDate.parse(dateStr, formatter);
+        } catch (DateTimeParseException e) {
+            System.out.println("Invalid date format. Please use format like '16 Oct 2004'");
+            throw e;
+        }
     }
 }

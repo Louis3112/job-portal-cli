@@ -5,6 +5,7 @@ import source.data.user.JobSeeker;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Application {
     private String applicationId;
@@ -18,6 +19,7 @@ public class Application {
 
     }
     public Application(String jobId, JobSeeker applicant, LocalDateTime appliedTime) {
+        this.applicationId = UUID.randomUUID().toString();
         this.jobId = jobId;
         this.applicant = applicant;
         this.appliedTime = appliedTime;

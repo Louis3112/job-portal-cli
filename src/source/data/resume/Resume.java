@@ -11,18 +11,20 @@ public class Resume {
     private ArrayList<WorkExperience> workingExperiences;
 
     public Resume(){
-
+        this.workingExperiences = new ArrayList<>();
     }
     
     public Resume(String userId, String lastEducation) {
         this.resumeId = UUID.randomUUID().toString();
         this.userId = userId;
         this.lastEducation = lastEducation;
+        this.workingExperiences = new ArrayList<>();
     }
 
-    public Resume(String resumeId, String userId, String lastEducation, ArrayList<WorkExperience> workingExperiences) {
+    public Resume(String userId, String lastEducation, ArrayList<WorkExperience> workingExperiences) {
         this(userId, lastEducation);
         this.workingExperiences = workingExperiences;
+        this.workingExperiences = new ArrayList<>();
     }
 
     public String getResumeId() {return resumeId;}
