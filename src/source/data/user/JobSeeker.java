@@ -13,6 +13,7 @@ public class JobSeeker extends User<JobSeeker> {
 
     public JobSeeker(String name, String email, String phone, String address) {
         super(name, email, phone, address);
+        this.resume = new Resume();
     }
 
     public JobSeeker(String name, String email, String phone, String address, Resume resume, ArrayList<Job> appliedJobs) {
@@ -41,11 +42,11 @@ public class JobSeeker extends User<JobSeeker> {
     public void search() {}
 
     public boolean applyForJob(Job job) {
-        boolean success = true;
         if (appliedJobs.size() > MAX_APPLIED_JOB_CAPACITY) {
-            success = false;
+            return false;
         }
-        return success;
+        appliedJobs.add(job);
+        return true;
     }
 
     public void uploadResume(Resume resume) {

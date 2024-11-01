@@ -31,8 +31,8 @@ public class Job {
     public void setJobName(String jobName) {this.jobName = jobName;}
     public String getJobDescription() {return jobDescription;}
     public void setJobDescription(String jobDescription) {this.jobDescription = jobDescription;}
-    public ArrayList<JobCategory> getCategory() {return jobCategories;}
-    public void setCategory(ArrayList<JobCategory> jobCategories) {this.jobCategories = jobCategories;}
+    public ArrayList<JobCategory> getJobCategories() {return jobCategories;}
+    public void setJobCategories(ArrayList<JobCategory> jobCategories) {this.jobCategories = jobCategories;}
     public String getRecruiter() {return recruiterId;}
     public void setRecruiter(String recruiterId) {this.recruiterId = recruiterId;}
 }

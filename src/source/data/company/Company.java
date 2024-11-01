@@ -22,4 +22,10 @@ public class Company {
         this.phone = phone;
         this.industry = industry;
     }
+
+    public String getCompanyId() {return companyId;}
+    public String getName() {return name;}
+    public String getAddress() {return address;}
+    public String getPhone() {return phone;}
+    public String getIndustry() {return industry;}
 }
