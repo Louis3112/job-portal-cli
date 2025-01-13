@@ -28,7 +28,7 @@ public class Resume {
     }
 
     public String getResumeId() {return resumeId;}
-    public void setResumeId(String reumseId) {this.resumeId = reumseId;}
+    public void setResumeId(String resumeId) {this.resumeId = resumeId;}
     public String getUserId() {return userId;}
     public void setUserId(String userId) {this.userId = userId;}
     public String getLastEducation() {return lastEducation;}

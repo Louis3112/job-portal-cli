@@ -1,10 +1,5 @@
 package source.utils.global;
 
-import source.data.company.Company;
-import source.data.job.Job;
-import source.data.job.JobCategory;
-import source.data.user.User;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -13,6 +8,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+import source.data.company.Company;
+import source.data.job.Job;
+import source.data.job.JobCategory;
+import source.data.user.User;
 
 public class Global {
     public static HashMap<String, User<?>> hashUsers = new HashMap<>();
