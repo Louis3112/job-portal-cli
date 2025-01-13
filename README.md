@@ -3,7 +3,7 @@
 ## :man_office_worker: **job-portal-cli** :man_office_worker:  
 "Our" Mid-Semester Project for Object-Oriented Programming (OOP) in 3rd Semester.
 
-The project is a job portal application linkedin-lookalike. It has variety of classes, such as :       
+The project is a job portal application inspired by LinkedIn, Jobstreet, etc. It has variety of classes, such as :       
 
 1. Application
    - Application Note
@@ -20,7 +20,8 @@ The project is a job portal application linkedin-lookalike. It has variety of cl
    - Job Seeker
   and other utils class such as auth, global,
 
-The project can be played and controlled by Recruiter and Job Seekr (but first, we have to register first).
+The project allows Recruiter and Job Seeker to interact each other with the platform.
+Users must register on the project before they can access features like posting jobs, applying for jobs, managing accounts, managing applications
 
 The project is developed using Java, runs on CLI, and requires only a minimal set of packages to use.
 For further information, there is a report written in *Bahasa Indonesia* and UML that you can read from.
