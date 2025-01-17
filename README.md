@@ -24,7 +24,8 @@ The project allows Recruiter and Job Seeker to interact each other with the plat
 Users must register on the project before they can access features like posting jobs, applying for jobs, managing accounts, managing applications
 
 The project is developed using Java, runs on CLI, and requires only a minimal set of packages to use.
-For further information, there is a[report](https://github.com/user-attachments/files/18407414/LAPORAN.IMPLEMENTASI.PEMROGRAMAN.BERORIENTASI.OBJEK.MENGGUNAKAN.BAHASA.JAVA.DALAM.PROGRAM.JOB.PORTAL.docx)
+
+For further information, there is a [report](https://github.com/user-attachments/files/18407414/LAPORAN.IMPLEMENTASI.PEMROGRAMAN.BERORIENTASI.OBJEK.MENGGUNAKAN.BAHASA.JAVA.DALAM.PROGRAM.JOB.PORTAL.docx)
 written in *Bahasa Indonesia* and [UML](https://github.com/user-attachments/assets/a03c10cc-337d-447d-83c9-4d06dd731852) that you can read from.
 
 ## :busts_in_silhouette: **Team** :busts_in_silhouette:
